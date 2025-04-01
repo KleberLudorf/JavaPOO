@@ -3,7 +3,7 @@ public class Produto {
     private double preço;
     private int quantidade;
 
-    /*gets */
+    /* gets */
     public String getNome() {
         return nome;
     }
@@ -16,16 +16,14 @@ public class Produto {
         return quantidade;
     }
 
-    /*sets */
-    public void setNome(String nome) {
+    /* sets */
+    public Produto(String nome, Double preço, int quantidade){
         this.nome = nome;
-    }
-
-    public void setPreço(double preço) {
         this.preço = preço;
-    }
-
-    public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
+
+    public Produto(String nome, Double preço){
+        this(nome, preço, 0);
+    } 
 }
